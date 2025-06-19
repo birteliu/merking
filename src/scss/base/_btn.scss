@@ -1,24 +1,46 @@
 .btn-color01 {
-    color: $main-color01;
     background-color: $main-color01;
     padding: .5rem 1.5rem;
     color: white;
     border-radius: 8px;
-    &:hover {
+    &:hover, &:active {
         transition: .3s;
         background-color: darken($main-color01, 10%);
         color: white;
     }
 }
-.btn-gray {
-    color: $gray-600;
-    background-color: $gray-600;;
+.btn-color01-dark {
+    background-color: $main-color01-dark;
     padding: .5rem 1.5rem;
     color: white;
     border-radius: 8px;
-    &:hover {
+    &:hover, &:active {
+        transition: .3s;
+        background-color: darken($main-color01-dark, 10%);
+        color: white;
+    }
+}
+.btn-gray {
+    background-color: $gray-600;
+    padding: .5rem 1.5rem;
+    color: white;
+    border-radius: 8px;
+    &:hover, &:active {
         transition: .3s;
         background-color: darken($gray-700, 5%);
         color: white;
+    }
+}
+.btn-white {
+    color: $gray-800;
+    background-color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid $gray-300;
+    &:hover, &:active {
+        transition: .3s;
+        background-color: $gray-100;
+        color: $gray-900;
+        border: 1px solid $gray-400;
     }
 }

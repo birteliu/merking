@@ -5,16 +5,55 @@
     .search-item {
         border: 1px solid $gray-300;
         padding: .25rem .75rem;
-        label {
+        label.search-title {
             white-space: nowrap;
             width: 100px;
             i {
                 color: $main-color01-dark;
             }
         }
-        select {
+        select, input[type=text] {
             border: 0;
             border-radius: 0;
         }
+    }
+    .btn-clear {
+        border-radius: 0;
+    }
+    .btn-search {
+        border-radius: 0;
+        border: 1px solid $main-color01-dark;
+    }
+}
+
+.calendar {
+    background-color: white;
+    box-shadow: $custom-box-shadow;
+    .calendar-top {
+        border-bottom: 1px solid $gray-300;
+        padding: 1rem;
+        .btn-arrow {
+            color: $main-color01-dark;
+            font-size: 1.5rem;
+            &:hover {
+                transition: .3s;
+                color: $main-color01;
+            }
+        }
+    }
+}
+
+.calendar-list {
+    box-shadow: $custom-box-shadow;
+    background-color: white;
+    .list-title {
+        color: white;
+        background-color: $main-color01;
+        padding: .5rem 1rem;
+    }
+    .list-date {
+        background-color: $gray-300;
+        color: black;
+        padding: .25rem 1rem;
     }
 }
