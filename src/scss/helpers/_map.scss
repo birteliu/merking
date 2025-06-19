@@ -1,0 +1,13 @@
+@import "../../../node_modules/bootstrap/scss/maps";
+
+// padding, margin, gap 等系列可用，spacer 預設為 1rem，擴充建立 px-6、m-7 等 class 名稱
+$spacers: map-merge(
+  $spacers,
+  (
+    6: $spacer * 4.5,
+    7: $spacer * 5,
+  )
+);
+
+// $custom-theme 在 _variables.scss 裡，例如 btn-color01
+$theme-colors: map-merge($theme-colors, $custom-theme);

@@ -1,0 +1,21 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+          <a href="./index.html" class="text-secondary"><i class="fas fa-home me-1"
+                  aria-hidden="true"></i>首頁</a>
+      </li>
+      {%- if pageSetting.breadcrumb -%}
+        {% for path in pageSetting.breadcrumb %}
+          {% if loop.last %}
+            {# 當前頁面樣式 #}
+            <li class="breadcrumb-item fw-bold text-color01 active" aria-current="page">{{ path.title }}</li>
+            {% else %}
+            {# 一般路徑樣式 #}
+            <li class="breadcrumb-item">
+                <a href="{{ path.url }}" class="text-secondary">{{ path.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {%- endif -%}
+  </ol>
+</nav>

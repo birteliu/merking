@@ -1,0 +1,20 @@
+.search-area {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: $custom-box-shadow;
+    .search-item {
+        border: 1px solid $gray-300;
+        padding: .25rem .75rem;
+        label {
+            white-space: nowrap;
+            width: 100px;
+            i {
+                color: $main-color01-dark;
+            }
+        }
+        select {
+            border: 0;
+            border-radius: 0;
+        }
+    }
+}

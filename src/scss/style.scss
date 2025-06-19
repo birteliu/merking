@@ -1,0 +1,25 @@
+// 注意引入順序不可變動
+
+// 引入用
+@charset "UTF-8";
+//helpers
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "./helpers/map";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "./helpers/utilities";
+
+//vendors
+@import "./vendors/bootstrap";
+
+//base
+@import "./base/fonts";
+@import "./base/btn";
+
+//layout
+@import "./layout/share";
+@import "./layout/nav";
+
+//pages
+@import "./pages/index";

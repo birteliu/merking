@@ -1,0 +1,32 @@
+// 定義字體
+$font-families: (
+  "Noto Sans TC": (
+    name: "NotoSansTC",
+    variants: (
+      "Regular": 400,
+      "Bold": 700,
+    ),
+  ),
+  "NanumGothic": (
+    name: "NanumGothic",
+    variants: (
+      "Regular": 400,
+      "Bold": 700,
+    ),
+  ),
+);
+
+// 迴圈處理所有字體
+@each $family, $config in $font-families {
+  @each $variant, $weight in map-get($config, "variants") {
+    @font-face {
+      font-family: "#{$family}";
+      src: local("#{map-get($config, name)}-#{$variant}"),
+        local("#{$family} #{$variant}"),
+        url("../fonts/#{map-get($config, name)}-#{$variant}.woff2")
+          format("truetype");
+      font-weight: $weight;
+      font-display: swap;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+// 覆蓋掉原本 bootstrap 預設內容
+$utilities: (
+  "max-width": (
+    property: max-width,
+    class: mw,
+    responsive: true,
+    // 如果要 RWD 加上這行並寫上 true，使可以設 mw-md-100, mw-lg-50 等
+    values:
+      (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+      ),
+  ),
+  "width": (
+    property: width,
+    class: w,
+    values: (
+      // 使可新增需要的數值 class 名稱
+      25: 25%,
+      15: 15%,
+      100: 100%,
+    ),
+  ),
+);
+
+// 新增進去想要的樣式，不會覆蓋掉原有 bootstrap 的樣式
+$utilities: map-merge(
+  $utilities,
+  (
+    "LC-border-radius": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        custom: $custom-border-radius,
+      ),
+    ),
+    "LC-shadow": (
+      property: box-shadow,
+      class: shadow,
+      values: (
+        custom: $custom-box-shadow,
+      ),
+    ),
+  )
+);

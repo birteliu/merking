@@ -1,0 +1,30 @@
+{% set buttonsData = [ 
+    {  "id": "nav-home-tab",
+        "target": "#nav-plan01", 
+        "ariaControls": "nav-home", 
+        "ariaSelected":true, 
+        "text": "頁籤-1"
+    }, 
+    {  "id": "nav-profile-tab", 
+        "target":"#nav-plan02", 
+        "ariaControls": "nav-profile", 
+        "ariaSelected": false,
+        "text": "頁籤-2"
+    }, 
+    {   "id": "nav-contact-tab", 
+        "target": "#nav-plan03",
+        "ariaControls": "nav-contact", 
+        "ariaSelected": false, 
+        "text": "頁籤-3"
+    }
+] %}
+
+<nav class="nav nav-tabs custom-nav-tabs" id="nav-tab" role="tablist">
+    {% for button in buttonsData %}
+    <button class="nav-link{% if button.ariaSelected %} active{% endif %} me-2" id="{{ button.id }}"
+        data-bs-toggle="tab" data-bs-target="{{ button.target }}" type="button" role="tab"
+        aria-controls="{{ button.ariaControls }}" aria-selected="{{ button.ariaSelected }}">
+        <h6 class="mb-0">{{ button.text }}</h6>
+    </button>
+    {% endfor %}
+</nav>

@@ -1,0 +1,24 @@
+.btn-color01 {
+    color: $main-color01;
+    background-color: $main-color01;
+    padding: .5rem 1.5rem;
+    color: white;
+    border-radius: 8px;
+    &:hover {
+        transition: .3s;
+        background-color: darken($main-color01, 10%);
+        color: white;
+    }
+}
+.btn-gray {
+    color: $gray-600;
+    background-color: $gray-600;;
+    padding: .5rem 1.5rem;
+    color: white;
+    border-radius: 8px;
+    &:hover {
+        transition: .3s;
+        background-color: darken($gray-700, 5%);
+        color: white;
+    }
+}
