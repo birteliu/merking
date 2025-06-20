@@ -15,7 +15,7 @@ breadcrumb : null
 <div id="content">
     <div class="d-flex justify-content-between">
         <div class="d-flex align-items-center">
-            <div class="menu-trigger px-2 me-2"><i class="bi bi-list"></i></div>
+            <div class="menu-trigger px-2 py-1 me-2"><i class="bi bi-list"></i></div>
             <div class="fw-bold main-color01-dark h5 mb-0">純水設備維修保養系統</div>
         </div>
         <div class="d-flex">
@@ -81,8 +81,8 @@ breadcrumb : null
             </div>
             <div class="col-md-4">
                 <div class="search-item d-flex align-items-center">
-                    <label for="" class="search-title"><i class="bi bi-card-text me-2"></i></label>
-                    <input class="form-control" type="text" placeholder="請輸入關鍵字" aria-label="default input example">
+                    <label for="" class="search-title"><i class="bi bi-card-text me-2"></i>關鍵字</label>
+                    <input class="form-control" type="text" placeholder="請輸入" aria-label="default input example">
                 </div>
             </div>
             <div class="col-md-4">
@@ -96,15 +96,15 @@ breadcrumb : null
          <div class="row">
 
             <!-- calendar -->
-            <div class="col-md-8 mt-3">
+            <div class="col-8 mt-3 pe-2">
                 <div class="calendar">
                     <div class="calendar-top">
                         <div class="d-flex justify-content-between">
                             <div>
                                 <button class="btn btn-color01 me-2">今天</button>
                                 <button class="btn btn-white btn-month"><i class="bi bi-calendar-event me-2"></i>2024 年 5 月</button>
-                                <button class="btn btn-arrow"><i class="bi bi-arrow-left-circle-fill"></i></button>
-                                <button class="btn btn-arrow"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                                <button class="btn btn-arrow py-0 border-0"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                                <button class="btn btn-arrow py-0 border-0"><i class="bi bi-arrow-right-circle-fill"></i></button>
                             </div>
                             <button class="btn btn-color01-dark"><i class="bi bi-plus me-2"></i>新增</button>
                         </div>
@@ -125,26 +125,30 @@ breadcrumb : null
                             <tbody>
                               <tr>
                                 <td class="past">
-                                    <div class="day">26</div>
+                                    <div class="day"><span class="fw-bold">26</span></div>
+                                    <div class="work" style="background-color: rgba(242,100,25,0.1); border:1px solid rgb(242,100,25)"><span class="fw-bold">客戶</span><span>已完工</span></div>
+                                    <div class="work" style="background-color: rgba(27,153,139,0.1); border:1px solid rgb(27,153,139)"><span class="fw-bold">客戶</span><span>已完工</span></div>
+                                    <div class="text-center">還有 2 筆</div>
                                 </td>
                                 <td class="past">
                                     <div class="day">27</div>
                                 </td>
                                 <td class="past">
-                                    <div class="day">28</div>
+                                    <div class="day"><span class="fw-bold today">28</span><span>端午節</span></div>
+                                    <div class="work" style="background-color: rgba(242,100,25,0.1); border:1px solid rgb(242,100,25)"><span class="fw-bold">客戶</span><span>已完工</span></div>
                                 </td>
                                 <td class="past">
-                                    <div class="day">29</div>
+                                    <div class="day"><span class="fw-bold">29</span></div>
                                 </td>
                                 <td class="past">
-                                    <div class="day">30</div>
+                                    <div class="day"><span class="fw-bold">30</span></div>
                                 </td>
                                 <td class="past">
-                                    <div class="day">31</div>
+                                    <div class="day"><span class="fw-bold">31</span></div>
                                 </td>
                                 <td>
-                                    <div class="day">1</div>
-                                </td>
+                                    <div class="day"><span class="fw-bold">1</span></div>
+                                    <div class="note">備忘錄內容</div>
                               </tr>
                             </tbody>
                           </table>
@@ -152,7 +156,7 @@ breadcrumb : null
                 </div>
             </div>
 
-            <div class="col-md-4 mt-3">
+            <div class="col-4 mt-3 ps-2">
                 <!-- calendar-list -->
                 <div class="calendar-list">
                     <div class="list-title"><i class="bi bi-receipt-cutoff me-2"></i>工單列表</div>
@@ -175,7 +179,7 @@ breadcrumb : null
                                     </div>
                                 </div>
                             </div>
-                            <div class="note px-3 py-2 border rounded mb-3">
+                            <div class="note-order px-3 py-2 border rounded mb-3">
                                 <div class="note-content">備忘錄內容</div>
                             </div>
                         </div>
@@ -204,7 +208,7 @@ breadcrumb : null
                 <div class="news mt-3">
                     <div class="list-title"><i class="bi bi-bell me-2"></i>公告消息</div>
                     <div class="p-3 news-content">
-                        <div class="mb-2"><i class="bi bi-droplet-half me-2"></i>保養 / 維修已超過 180 日</div>
+                        <div class="mb-1"><i class="bi bi-droplet-half me-2"></i>保養 / 維修已超過 180 日</div>
                         <div class="border rounded px-3 py-2 mb-2">
                             <div class="fw-bold">客戶名稱</div>
                             <div>上次完成日 2024/12/25</div>
@@ -213,7 +217,7 @@ breadcrumb : null
                             <div class="fw-bold">客戶名稱</div>
                             <div>上次完成日 2024/12/25</div>
                         </div>
-                        <div class="mb-2"><i class="bi bi-droplet-half me-2"></i>過期未完工</div>
+                        <div class="mb-1"><i class="bi bi-droplet-half me-2"></i>過期未完工</div>
                         <div class="border rounded px-3 py-2 mb-2">
                             <div class="fw-bold">客戶名稱</div>
                             <div>上次完成日 2024/12/25</div>
