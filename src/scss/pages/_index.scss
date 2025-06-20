@@ -41,6 +41,27 @@
             }
         }
     }
+    .calendar-body {
+        table {
+            thead {
+                th {
+                    text-align: center;
+                }
+            }
+            tbody {
+                td {
+                    height: 100px;
+                    &.past {
+                        background-color: $gray-100;
+                    }
+                    .day {
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .calendar-list {
@@ -51,9 +72,68 @@
         background-color: $main-color01;
         padding: .5rem 1rem;
     }
+    .list-item {
+        height: 400px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar-track {
+            background-color: $gray-300;
+        }
+        &::-webkit-scrollbar {
+            width: 9px;
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $gray-600;
+        }
+    }
     .list-date {
         background-color: $gray-300;
         color: black;
         padding: .25rem 1rem;
+    }
+    .work-order, .note {
+        cursor: pointer;
+        &:hover {
+            transition: .3s;
+            border: 1px solid $gray-700!important;
+            box-shadow: $custom-box-shadow;
+        }
+    }
+    .note {
+        .note-content {
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: $gray-500;
+                margin-right: .5rem;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.news {
+    box-shadow: $custom-box-shadow;
+    background-color: white;
+    .list-title {
+        color: white;
+        background-color: $main-color01;
+        padding: .5rem 1rem;
+    }
+    .news-content {
+        height: 300px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar-track {
+            background-color: $gray-300;
+        }
+        &::-webkit-scrollbar {
+            width: 9px;
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $gray-600;
+        }
     }
 }

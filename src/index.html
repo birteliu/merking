@@ -106,53 +106,123 @@ breadcrumb : null
                                 <button class="btn btn-arrow"><i class="bi bi-arrow-left-circle-fill"></i></button>
                                 <button class="btn btn-arrow"><i class="bi bi-arrow-right-circle-fill"></i></button>
                             </div>
-                            <button class="btn btn-color01-dark"><i class="bi bi-plus"></i>新增</button>
+                            <button class="btn btn-color01-dark"><i class="bi bi-plus me-2"></i>新增</button>
+                        </div>
+                    </div>
+                    <div class="calendar-body">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">星期日</th>
+                                <th scope="col">星期一</th>
+                                <th scope="col">星期二</th>
+                                <th scope="col">星期三</th>
+                                <th scope="col">星期四</th>
+                                <th scope="col">星期五</th>
+                                <th scope="col">星期六</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="past">
+                                    <div class="day">26</div>
+                                </td>
+                                <td class="past">
+                                    <div class="day">27</div>
+                                </td>
+                                <td class="past">
+                                    <div class="day">28</div>
+                                </td>
+                                <td class="past">
+                                    <div class="day">29</div>
+                                </td>
+                                <td class="past">
+                                    <div class="day">30</div>
+                                </td>
+                                <td class="past">
+                                    <div class="day">31</div>
+                                </td>
+                                <td>
+                                    <div class="day">1</div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-3">
+                <!-- calendar-list -->
+                <div class="calendar-list">
+                    <div class="list-title"><i class="bi bi-receipt-cutoff me-2"></i>工單列表</div>
+                    <div class="list-item">
+
+                        <div class="list-date">5 月 8 日 (六)</div>
+                        <div class="px-3 pt-3">
+                            <div class="work-order border rounded mb-3">
+                                <div class="d-flex justify-content-between bg-secondary text-white rounded-top px-3 py-1">
+                                    <span>ABC12345</span>
+                                    <span>已完工</span>
+                                </div>
+                                <div class="px-3 py-2"> 
+                                    <div class="fw-bold">八九十九十九十股份股份有限公司限公司 (簡稱)</div>
+                                    <div class="bg-secondary bg-opacity-10 rounded px-2 py-1 my-2">類型一 BC123  一號設備</div>
+                                    <div class="bg-secondary bg-opacity-10 rounded px-2 py-1 my-2">類型一 BC123  一號設備</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><i class="bi bi-geo-alt me-2"></i>高雄市</div>
+                                        <div class=" rounded py-1 px-3" style="background-color: rgba(242,100,25,0.1); border:1px solid rgb(242,100,25);"><i class="bi bi-briefcase me-2" style="color: rgb(242,100,25);"></i>王小明</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="note px-3 py-2 border rounded mb-3">
+                                <div class="note-content">備忘錄內容</div>
+                            </div>
+                        </div>
+
+                        <div class="list-date">5 月 9 日 (日)</div>
+                        <div class="px-3 pt-3">
+                            <div class="work-order border rounded mb-3">
+                                <div class="d-flex justify-content-between bg-secondary text-white rounded-top px-3 py-1">
+                                    <span>ABC12345</span>
+                                    <span>已完工</span>
+                                </div>
+                                <div class="px-3 py-2"> 
+                                    <div class="fw-bold">八九十九十九十股份股份有限公司限公司 (簡稱)</div>
+                                    <div class="bg-secondary bg-opacity-10 rounded px-2 py-1 my-2">類型一 BC123  一號設備</div>
+                                    <div class="bg-secondary bg-opacity-10 rounded px-2 py-1 my-2">類型一 BC123  一號設備</div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><i class="bi bi-geo-alt me-2"></i>高雄市</div>
+                                        <div class=" rounded py-1 px-3" style="background-color: rgba(242,100,25,0.1); border:1px solid rgb(242,100,25);"><i class="bi bi-briefcase me-2" style="color: rgb(242,100,25);"></i>王小明</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="news mt-3">
+                    <div class="list-title"><i class="bi bi-bell me-2"></i>公告消息</div>
+                    <div class="p-3 news-content">
+                        <div class="mb-2"><i class="bi bi-droplet-half me-2"></i>保養 / 維修已超過 180 日</div>
+                        <div class="border rounded px-3 py-2 mb-2">
+                            <div class="fw-bold">客戶名稱</div>
+                            <div>上次完成日 2024/12/25</div>
+                        </div>
+                        <div class="border rounded px-3 py-2 mb-2">
+                            <div class="fw-bold">客戶名稱</div>
+                            <div>上次完成日 2024/12/25</div>
+                        </div>
+                        <div class="mb-2"><i class="bi bi-droplet-half me-2"></i>過期未完工</div>
+                        <div class="border rounded px-3 py-2 mb-2">
+                            <div class="fw-bold">客戶名稱</div>
+                            <div>上次完成日 2024/12/25</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- calendar-list -->
-            <div class="col-md-4 mt-3">
-                <div class="calendar-list">
-                    <div class="list-title"><i class="bi bi-receipt-cutoff me-2"></i>工單列表</div>
-                    <div class="list-item">
-                        <div class="list-date">5 月 8 日 (六)</div>
-                        <div class="p-3">
-                            <div class="word-order border rounded mb-3">
-                                <div class="d-flex justify-content-between bg-secondary text-white rounded-top px-3 py-1">
-                                    <span>ABC12345</span>
-                                    <span>已完工</span>
-                                </div>
-                                <div class="px-3 py-2"> 
-                                    <div class="fw-bold">八九十九十九十股份股份有限公司限公司 (簡稱)</div>
-                                    <div class="bg-secondary bg-opacity-10 rounded px-2 py-1 my-2">類型一 BC123  一號設備</div>
-                                    <div class="bg-secondary bg-opacity-10 rounded px-2 py-1 my-2">類型一 BC123  一號設備</div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div><i class="bi bi-geo-alt me-2"></i>高雄市</div>
-                                        <div class=" rounded py-1 px-3" style="background-color: rgba(242,100,25,0.1); border:1px solid rgb(242,100,25);"><i class="bi bi-briefcase me-2" style="color: rgb(242,100,25);"></i>王小明</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="word-order border rounded mb-3">
-                                <div class="d-flex justify-content-between bg-secondary text-white rounded-top px-3 py-1">
-                                    <span>ABC12345</span>
-                                    <span>已完工</span>
-                                </div>
-                                <div class="px-3 py-2"> 
-                                    <div class="fw-bold">八九十九十九十股份股份有限公司限公司 (簡稱)</div>
-                                    <div class="bg-secondary bg-opacity-10 rounded px-2 py-1 my-2">類型一 BC123  一號設備</div>
-                                    <div class="bg-secondary bg-opacity-10 rounded px-2 py-1 my-2">類型一 BC123  一號設備</div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div><i class="bi bi-geo-alt me-2"></i>高雄市</div>
-                                        <div class=" rounded py-1 px-3" style="background-color: rgba(242,100,25,0.1); border:1px solid rgb(242,100,25);"><i class="bi bi-briefcase me-2" style="color: rgb(242,100,25);"></i>王小明</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
          </div>
     </div>
