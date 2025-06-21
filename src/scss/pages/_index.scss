@@ -72,6 +72,9 @@
             margin-bottom: 0;
             thead {
                 font-size: .9rem;
+                @include media-breakpoint-down(sm) {
+                    font-size: .75rem;
+                }
                 th {
                     text-align: center;
                     border: 1px solid $gray-200;
@@ -79,6 +82,9 @@
             }
             tbody {
                 font-size: .85rem;
+                @include media-breakpoint-down(sm) {
+                    font-size: .75rem;
+                }
                 td {
                     height: 150px;
                     border: 1px solid $gray-200;
