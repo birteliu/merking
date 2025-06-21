@@ -17,10 +17,10 @@ breadcrumb : null
 <div class="content container-fluid">
     <div class="page">
         <div class="page-title">
-            <div><i class="bi bi-receipt-cutoff me-2"></i>新增工單<span class="warning">30天內有相同客戶工單</span></div>
+            <div><i class="bi bi-receipt-cutoff me-2"></i>新增工單<span class="warning">30天內有同客戶工單</span></div>
             <div>
-                <button class="btn py-0 btn-previous"><i class="bi bi-arrow-left-circle-fill me-1"></i><span class="d-sm-inline-block d-none">上一筆</span></button>
-                <button class="btn py-0 btn-next"><span class="d-sm-inline-block d-none">下一筆</span><i class="bi bi-arrow-right-circle-fill ms-1"></i></button>
+                <button class="btn py-0 px-sm-3 px-1 btn-previous"><i class="bi bi-arrow-left-circle-fill me-1"></i><span class="d-sm-inline-block d-none">上一筆</span></button>
+                <button class="btn py-0 px-sm-3 px-1 btn-next"><span class="d-sm-inline-block d-none">下一筆</span><i class="bi bi-arrow-right-circle-fill ms-1"></i></button>
             </div>
         </div>
         <div class="form-area mb-3">
@@ -120,45 +120,53 @@ breadcrumb : null
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="" class="form-label mb-1">聯絡人清單</label>
-                        <div class="row g-1 align-items-center mb-1 text-nowrap">
-                            <div class="col-md-1">
-                                <div class="bg-secondary text-white p-2 rounded">主管</div>
-                            </div>
-                            <div class="col-md col-6">
-                                <input type="text" class="form-control" id="" placeholder="姓名">
-                            </div>
-                            <div class="col-md col-6">
-                                <input type="text" class="form-control" id="" placeholder="電話">
-                            </div>
-                            <div class="col-md col-6">
-                                <input type="text" class="form-control" id="" placeholder="手機">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" id="" placeholder="E-mail">
-                            </div>
-                            <div class="col-auto">
-                                <button class="btn btn-outline-secondary px-2"><i class="bi bi-trash"></i></button>
-                            </div>
-                        </div>
-                        <div class="row g-1 align-items-center mb-1">
-                            <div class="col-md-1">
-                                <div class="bg-secondary text-white p-2 rounded">聯絡人</div>
-                            </div>
-                            <div class="col-md col-6">
-                                <input type="text" class="form-control" id="" placeholder="姓名">
-                            </div>
-                            <div class="col-md col-6">
-                                <input type="text" class="form-control" id="" placeholder="電話">
-                            </div>
-                            <div class="col-md col-6">
-                                <input type="text" class="form-control" id="" placeholder="手機">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" id="" placeholder="E-mail">
-                            </div>
-                            <div class="col-auto">
-                                <button class="btn btn-outline-secondary px-2"><i class="bi bi-trash"></i></button>
-                            </div>
+
+
+                        <div class="table-responsive">
+                            <table class="table form-table mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td class="w4rem">
+                                            <div class="bg-secondary text-white px-2 py-2 rounded">主管</div>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="姓名">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="電話">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="手機">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="E-mail">
+                                        </td>
+                                        <td class="trash">
+                                            <button class="btn btn-outline-secondary px-2 py-1"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w4rem">
+                                            <div class="bg-secondary text-white p-2 rounded">聯絡人</div>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="姓名">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="電話">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="手機">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="E-mail">
+                                        </td>
+                                        <td class="trash">
+                                            <button class="btn btn-outline-secondary px-2 py-1"><i class="bi bi-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <button class="btn btn-color01-dark">新增</button>
                     </div>
@@ -340,7 +348,7 @@ breadcrumb : null
                         <button class="btn btn-color01-dark px-3 py-1">新增</button>
                     </div>
                 </div>
-                <button class="btn btn-color01-dark ms-4 mb-3"><i class="bi bi-plus-lg me-2"></i>新增</button>
+                <button class="btn btn-color01-dark ms-sm-4 mb-3"><i class="bi bi-plus-lg me-2"></i>新增</button>
             </div>
             <div class="form-section border-bottom">
                 <div class="form-section-title"><i class="bi bi-sticky me-2"></i>其他資料</div>

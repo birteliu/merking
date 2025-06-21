@@ -74,6 +74,9 @@ body {
           &.trash {
             min-width: calc(2rem + 2px);
           }
+          &.w4rem {
+            min-width: 4rem;
+          }
         }
       }
     }
