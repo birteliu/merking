@@ -1,3 +1,9 @@
+.index {
+    @include media-breakpoint-up(xl) {
+        height: calc(100vh - 1.5rem - 29px);
+        overflow: hidden;
+    }
+}
 .search-area {
     background-color: white;
     border-radius: 8px;
@@ -20,10 +26,18 @@
     }
     .btn-clear {
         border-radius: 0;
+        @include media-breakpoint-down(sm) {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
     }
     .btn-search {
         border-radius: 0;
         border: 1px solid $main-color01-dark;
+        @include media-breakpoint-down(sm) {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
     }
 }
 
@@ -44,6 +58,10 @@
                 transition: .3s;
                 color: $main-color01;
             }
+            @include media-breakpoint-down(sm) {
+                padding-left: .25rem;
+                padding-right: .25rem;
+            }
         }
     }
     .calendar-body {
@@ -62,7 +80,7 @@
                 td {
                     height: 150px;
                     border: 1px solid $gray-200;
-                    &.past {
+                    &.past, &.future {
                         background-color: $gray-100;
                     }
                     .day {

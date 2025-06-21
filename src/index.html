@@ -13,7 +13,7 @@ breadcrumb : null
 <!-- {% include "macros/breadcrumb.html" %} -->
 
 <!-- CONTENT -->
-<div class="content container-fluid">
+<div class="content container-fluid index">
     <!-- search -->
     <form class="row search-area g-0"> 
         <div class="col-sm-4">
@@ -51,8 +51,8 @@ breadcrumb : null
         </div>
         <div class="col-sm-4">
             <div class="search-item d-flex align-items-center">
-                <label for="" class="search-title"><i class="bi bi-droplet-half me-2"></i>狀態</label>
-                <div class="form-control border-0">
+                <label for="" class="search-title d-lg-inline-block d-md-none d-inline-block"><i class="bi bi-droplet-half me-2"></i>狀態</label>
+                <div class="form-control border-0 px-lg-2 px-md-0 px-2">
                     <div class="form-check form-check-inline me-2 mb-0">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                         <label class="form-check-label" for="inlineCheckbox1">未完工</label>
@@ -90,11 +90,11 @@ breadcrumb : null
                     <div class="d-flex justify-content-between">
                         <div>
                             <button class="btn btn-color01 me-2">今天</button>
-                            <button class="btn btn-white btn-month"><i class="bi bi-calendar-event me-2"></i>2024 年 5 月</button>
+                            <button class="btn btn-white btn-month"><i class="bi bi-calendar-event me-2 d-sm-inline-block d-none"></i>2024 年 5 月</button>
                             <button class="btn btn-arrow py-0 border-0"><i class="bi bi-arrow-left-circle-fill"></i></button>
                             <button class="btn btn-arrow py-0 border-0"><i class="bi bi-arrow-right-circle-fill"></i></button>
                         </div>
-                        <button class="btn btn-color01-dark"><i class="bi bi-plus me-2"></i>新增</button>
+                        <button class="btn btn-color01-dark"><i class="bi bi-plus me-2 d-sm-inline-block d-none"></i>新增</button>
                     </div>
                 </div>
                 <div class="calendar-body">
@@ -234,10 +234,10 @@ breadcrumb : null
                                 <td>
                                     <div class="day"><span class="fw-bold">6</span></div>
                                 </td>
-                                <td>
+                                <td class="future">
                                     <div class="day"><span class="fw-bold">7</span></div>
                                 </td>
-                                <td>
+                                <td class="future">
                                     <div class="day"><span class="fw-bold">8</span></div>
                                     <div class="note">備忘錄內容</div>
                                 </td>

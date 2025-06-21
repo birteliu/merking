@@ -8,6 +8,9 @@
         background-color: darken($main-color01, 10%);
         color: white!important;
     }
+    @include media-breakpoint-down(sm) {
+        padding: .35rem .75rem;
+    }
 }
 .btn-color01-dark {
     background-color: $main-color01-dark;
@@ -19,6 +22,9 @@
         background-color: darken($main-color01-dark, 10%);
         color: white!important;
     }
+    @include media-breakpoint-down(sm) {
+        padding: .35rem .75rem;
+    }
 }
 .btn-gray {
     background-color: $gray-600;
@@ -29,6 +35,9 @@
         transition: .3s;
         background-color: darken($gray-700, 5%)!important;
         color: white!important;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: .35rem .75rem;
     }
 }
 .btn-white {
@@ -42,5 +51,8 @@
         background-color: $gray-100;
         color: white!important;
         border: 1px solid $gray-400;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: .35rem .75rem;
     }
 }
