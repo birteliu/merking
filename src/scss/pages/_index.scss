@@ -1,5 +1,5 @@
 .index {
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(md) {
         height: calc(100vh - 1.5rem - 29px);
         overflow: hidden;
     }
@@ -101,19 +101,31 @@
                         padding: .15rem .25rem;
                         border-radius: 4px;
                         margin-top: .25rem;
+                        span {
+                            line-height: 1.25;
+                        }
+                        @include media-breakpoint-down(lg) {
+                            display: block;
+                            span {
+                                display: block;
+                            }
+                        }
                     }
                     .more {
                         margin-top: .25rem;
                         text-align: center;
                     }
-                    .note::before {
-                        content: "";
-                        display: inline-block;
-                        width: 10px;
-                        height: 10px;
-                        background-color: $gray-500;
-                        margin-right: .25rem;
-                        border-radius: 5px;
+                    .note {
+                        line-height: 1.25;
+                        &:before {
+                            content: "";
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            background-color: $gray-500;
+                            margin-right: .25rem;
+                            border-radius: 5px;
+                        }
                     }
                 }
             }
