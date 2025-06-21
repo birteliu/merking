@@ -10,3 +10,51 @@ body {
 .content {
   margin-top: calc(1rem + .5rem + 28px + 1px);
 }
+.page-title {
+  font-weight: bold;
+  background-color: $main-color01;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .warning {
+    background-color: #FFDD86;
+    color: black;
+    font-weight: normal;
+    padding: 0 .25rem;
+    margin-left: .5rem;
+    display: inline-block;
+  }
+  .btn-previous, .btn-next {
+    color: white;
+    &:hover, &:active {
+      transition: .3s;
+      background-color: darken($main-color01, 10%);
+      color: white;
+    }
+  }
+}
+.form-area {
+  background-color: white;
+  box-shadow: $custom-box-shadow;
+  .form-section {
+    padding: 1rem 1rem 0 1rem;
+    .form-section-title {
+      font-weight: bold;
+      font-size: 1.25rem;
+      i {
+        color: $main-color01-dark;
+      }
+    }
+    label.required {
+      &:after {
+        content: "*";
+        display: inline-block;
+        color: red;
+        margin-left: .25rem;
+      }
+    }
+  }
+}
