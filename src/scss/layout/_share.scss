@@ -6,3 +6,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+.content {
+  margin-top: calc(1rem + .5rem + 28px + 1px);
+}

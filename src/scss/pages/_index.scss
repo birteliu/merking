@@ -2,6 +2,7 @@
     background-color: white;
     border-radius: 8px;
     box-shadow: $custom-box-shadow;
+
     .search-item {
         border: 1px solid $gray-300;
         padding: .25rem .75rem;
@@ -26,9 +27,14 @@
     }
 }
 
+.calendar-area {
+    height: calc(100vh - 6.5rem - 4px - 1.5rem - 29px);
+}
+
 .calendar {
     background-color: white;
     box-shadow: $custom-box-shadow;
+    height: calc(100% - 0.5rem);
     .calendar-top {
         padding: .65rem 1rem;
         .btn-arrow {
@@ -41,7 +47,11 @@
         }
     }
     .calendar-body {
+        height: calc(100% - 1.3rem - 1.5rem - .7rem);
+        overflow: scroll;
         table {
+            table-layout: fixed;
+            margin-bottom: 0;
             thead {
                 th {
                     text-align: center;
@@ -50,7 +60,7 @@
             }
             tbody {
                 td {
-                    height: 130px;
+                    height: 150px;
                     border: 1px solid $gray-200;
                     &.past {
                         background-color: $gray-100;
@@ -72,7 +82,11 @@
                         justify-content: space-between;
                         padding: .15rem .25rem;
                         border-radius: 4px;
-                        margin-bottom: .25rem;
+                        margin-top: .25rem;
+                    }
+                    .more {
+                        margin-top: .25rem;
+                        text-align: center;
                     }
                     .note::before {
                         content: "";
@@ -89,16 +103,22 @@
     }
 }
 
+.list-area {
+    height: calc(100vh - 6.5rem - 4px - 1.5rem - 29px);
+    overflow: hidden;
+}
+
 .calendar-list {
     box-shadow: $custom-box-shadow;
     background-color: white;
+    height: 60%;
     .list-title {
         color: white;
         background-color: $main-color01;
         padding: .35rem 1rem;
     }
     .list-item {
-        height: 400px;
+        height: calc(100% - 1rem - 0.7rem);
         overflow-y: scroll;
         &::-webkit-scrollbar-track {
             background-color: $gray-300;
@@ -115,6 +135,8 @@
         background-color: $gray-300;
         color: black;
         padding: .25rem 1rem;
+        display: flex;
+        justify-content: space-between;
     }
     .work-order, .note-order {
         cursor: pointer;
@@ -142,13 +164,14 @@
 .news {
     box-shadow: $custom-box-shadow;
     background-color: white;
+    height: calc(40% - 1.5rem);
     .list-title {
         color: white;
         background-color: $main-color01;
         padding: .35rem 1rem;
     }
     .news-content {
-        height: 300px;
+        height: calc(100% - 1rem - 1rem - 0.7rem);
         overflow-y: scroll;
         &::-webkit-scrollbar-track {
             background-color: $gray-300;
