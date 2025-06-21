@@ -74,8 +74,9 @@ body {
           &.trash {
             min-width: calc(2rem + 2px);
           }
-          &.w4rem {
-            min-width: 4rem;
+          &.w425rem {
+            min-width: 4.25rem;
+            white-space: nowrap;
           }
         }
       }
@@ -84,9 +85,12 @@ body {
       position: relative;
       height: 250px;
       width: calc(25% - 1rem);
+      @include media-breakpoint-down(lg) {
+        height: 200px;
+      }
       @include media-breakpoint-down(sm) {
         width: calc(50% - 1rem);
-        height: 200px;
+        height: 160px;
       }
       img {
         object-fit: contain;
