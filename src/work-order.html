@@ -19,8 +19,8 @@ breadcrumb : null
         <div class="page-title">
             <div><i class="bi bi-receipt-cutoff me-2"></i>新增工單<span class="warning">30天內有相同客戶工單</span></div>
             <div>
-                <button class="btn py-0 btn-previous"><i class="bi bi-arrow-left-circle-fill me-1"></i>上一筆</button>
-                <button class="btn py-0 btn-next">下一筆<i class="bi bi-arrow-right-circle-fill ms-1"></i></button>
+                <button class="btn py-0 btn-previous"><i class="bi bi-arrow-left-circle-fill me-1"></i><span class="d-sm-inline-block d-none">上一筆</span></button>
+                <button class="btn py-0 btn-next"><span class="d-sm-inline-block d-none">下一筆</span><i class="bi bi-arrow-right-circle-fill ms-1"></i></button>
             </div>
         </div>
         <div class="form-area mb-3">
@@ -58,7 +58,7 @@ breadcrumb : null
             </div>
             <div class="form-section border-bottom">
                 <div class="form-section-title"><i class="bi bi-door-open me-2"></i>客戶資訊</div>
-                <div class="row py-3 ps-3 ms-0">
+                <div class="row py-3 ps-sm-3 ms-0">
                     <div class="col-md-4 mb-3">
                         <label for="" class="form-label mb-1 required">客戶名稱</label>
                         <select class="form-select" aria-label="">
@@ -166,7 +166,7 @@ breadcrumb : null
             </div>
             <div class="form-section border-bottom">
                 <div class="form-section-title"><i class="bi bi-briefcase me-2"></i>工程師資訊</div>
-                <div class="row py-3 ps-3 ms-0">
+                <div class="row py-3 ps-sm-3 ms-0">
                     <div class="col-md mb-3">
                         <label for="" class="form-label mb-1 required">名稱</label>
                         <select class="form-select" aria-label="">
@@ -190,7 +190,7 @@ breadcrumb : null
             </div>
             <div class="form-section border-bottom">
                 <div class="form-section-title"><i class="bi bi-ui-checks-grid me-2"></i>設備資訊</div>
-                <div class="p-3 ms-4 bg-main-color01-light rounded my-2">
+                <div class="p-3 ms-sm-4 bg-main-color01-light rounded my-2">
                     <div class="row mb-2 g-2">
                         <div class="col-md-4 col-6">
                             <select class="form-select" aria-label="">
@@ -344,7 +344,7 @@ breadcrumb : null
             </div>
             <div class="form-section border-bottom">
                 <div class="form-section-title"><i class="bi bi-sticky me-2"></i>其他資料</div>
-                <div class="ms-4 ps-1 py-3">
+                <div class="ms-sm-4 ps-1 py-3">
                     <div class="mb-3">
                         <label for="" class="form-label mb-1">注意事項</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -352,19 +352,19 @@ breadcrumb : null
                     <div class="mb-2">
                         <label for="formFileMultiple" class="form-label mb-1">檔案上傳</label>
                         <div class="d-flex flex-wrap">
-                            <div class="border rounded me-3 mb-3 upload-img">
+                            <div class="border rounded me-2 mb-2 upload-img">
                                 <button class="btn btn-trash"><i class="bi bi-trash "></i></button>
                                 <img src="images/logo.png" alt="">
                             </div>
-                            <div class="border rounded me-3 mb-3 upload-img">
+                            <div class="border rounded me-2 mb-2 upload-img">
                                 <button class="btn btn-trash"><i class="bi bi-trash "></i></button>
                                 <img src="images/aa.png" alt="">
                             </div>
-                            <div class="border rounded me-3 mb-3 upload-img">
+                            <div class="border rounded me-2 mb-2 upload-img">
                                 <button class="btn btn-trash"><i class="bi bi-trash "></i></button>
                                 <img src="images/aa.png" alt="">
                             </div>
-                            <div class="border rounded me-3 mb-3 upload-img">
+                            <div class="border rounded me-2 mb-2 upload-img">
                                 <button class="btn btn-trash"><i class="bi bi-trash "></i></button>
                                 <img src="images/aa.png" alt="">
                             </div>
@@ -398,7 +398,7 @@ breadcrumb : null
             </div>
         </div>
     </div>
-    <div class="fixed-bottom bg-white d-flex align-items-center justify-content-center py-2">
+    <div class="fixed-bottom bg-white d-flex align-items-center justify-content-center py-2 shadow-lg">
         <button type=" button" class="btn btn-secondary me-2"><i class="bi bi-x me-2 d-sm-inline-block d-none"></i>取消</button>
         <button type=" button" class="btn btn-color01 me-2"><i class="bi bi-ticket-perforated me-2 d-sm-inline-block d-none"></i>拆單</button>
         <button type=" button" class="btn btn-color01-dark-outline me-2"><i class="bi bi-envelope me-2 d-sm-inline-block d-none"></i>寄送 E-mail</button>
