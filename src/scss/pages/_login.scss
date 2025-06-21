@@ -1,0 +1,13 @@
+.login {
+    height: 100vh;
+    .login-box {
+        border: 1px solid $main-color01;
+        border-radius: 20px;
+        padding: 2rem;
+        .login-name {
+            background-color: $main-color01;
+            color: white;
+            border-radius: 50px 0 0 50px;
+        }
+    }
+}

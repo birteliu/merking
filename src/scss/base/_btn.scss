@@ -36,7 +36,8 @@
         transition: .3s;
         background-color: lightne($main-color01-light, 5%);
         color: $main-color01-dark!important;
-        border: 1px solid $main-color01-dark;
+        border: 1px solid darken($main-color01-dark, 10%);
+        background-color: $gray-100;
     }
     @include media-breakpoint-down(sm) {
         padding: .35rem .75rem;

@@ -1,0 +1,38 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+<!--TITLE setting-->
+{% set pageSetting = {
+title: "登入",
+activeNav: "index",
+breadcrumb : null
+}
+%}
+
+{% block content %}
+<!-- 麵包屑 -->
+<!-- {% include "macros/breadcrumb.html" %} -->
+
+<!-- CONTENT -->
+<div class="container-fluid">
+    <div class="login d-flex align-items-center justify-content-center">
+        <div class="col-md-6">
+            <div class="login-box bg-white">
+                <div class="fw-bold text-center h4 mb-4">登入</div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text login-name px-4" id=""><i class="bi bi-person me-2"></i>帳號</span>
+                    <input type="text" class="form-control form-control-lg" placeholder="帳號" aria-label="Username" aria-describedby="">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text login-name px-4" id=""><i class="bi bi-key me-2"></i>密碼</span>
+                    <input type="password" class="form-control form-control-lg" placeholder="密碼" aria-label="Password" aria-describedby="">
+                </div> 
+                <div class="text-center"><button type="submit" class="btn btn-color01 btn-lg rounded-pill px-5" onclick="window.location.href='index.html'">登入</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

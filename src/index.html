@@ -9,8 +9,9 @@ breadcrumb : null
 %}
 
 {% block content %}
-<!-- 麵包屑 -->
-<!-- {% include "macros/breadcrumb.html" %} -->
+
+<!-- 選單 -->
+{% include "macros/nav.html" %}
 
 <!-- CONTENT -->
 <div class="content container-fluid index">
@@ -94,7 +95,7 @@ breadcrumb : null
                             <button class="btn btn-arrow py-0 border-0"><i class="bi bi-arrow-left-circle-fill"></i></button>
                             <button class="btn btn-arrow py-0 border-0"><i class="bi bi-arrow-right-circle-fill"></i></button>
                         </div>
-                        <button class="btn btn-color01-dark" data-bs-toggle="modal" data-bs-target="#addModal"><i class="bi bi-plus me-2 d-sm-inline-block d-none"></i>新增</button>
+                        <button class="btn btn-color01-dark" data-bs-toggle="modal" data-bs-target="#addModal"><i class="bi bi-plus-lg me-2 d-sm-inline-block d-none"></i>新增</button>
                     </div>
                 </div>
                 <div class="calendar-body">
@@ -250,13 +251,13 @@ breadcrumb : null
 
         <div class="col-sm-4 mt-3 ps-2 list-area">
             <!-- calendar-list -->
-            <div class="calendar-list">
+            <div class="calendar-list pb-2">
                 <div class="list-title"><i class="bi bi-receipt-cutoff me-2"></i>工單列表</div>
                 <div class="list-item">
 
                     <div class="list-date"><span class="fw-bold">5月8日(六)</span><span>端午節</span></div>
-                    <div class="px-3 pt-3">
-                        <div class="work-order border rounded mb-3">
+                    <div class="px-2 pt-2">
+                        <div class="work-order border rounded mb-2">
                             <div class="d-flex justify-content-between bg-secondary text-white rounded-top px-3 py-1">
                                 <span>ABC12345</span>
                                 <span>已完工</span>
@@ -271,14 +272,14 @@ breadcrumb : null
                                 </div>
                             </div>
                         </div>
-                        <div class="note-order px-3 py-2 border rounded mb-3">
+                        <div class="note-order px-3 py-2 border rounded mb-2">
                             <div class="note-content">備忘錄內容</div>
                         </div>
                     </div>
 
                     <div class="list-date"><span class="fw-bold">5月9日(日)</span></div>
-                    <div class="px-3 pt-3">
-                        <div class="work-order border rounded mb-3">
+                    <div class="px-2 pt-2">
+                        <div class="work-order border rounded mb-2">
                             <div class="d-flex justify-content-between bg-secondary text-white rounded-top px-3 py-1">
                                 <span>ABC12345</span>
                                 <span>已完工</span>
@@ -299,7 +300,7 @@ breadcrumb : null
             </div>
             <div class="news mt-3">
                 <div class="list-title"><i class="bi bi-bell me-2"></i>公告消息</div>
-                <div class="p-3 news-content">
+                <div class="p-2 news-content">
                     <div class="mb-1"><i class="bi bi-droplet-half me-2"></i>保養 / 維修已超過 180 日</div>
                     <div class="border rounded px-3 py-2 mb-2">
                         <div class="fw-bold">客戶名稱</div>
