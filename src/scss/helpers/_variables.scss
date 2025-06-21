@@ -13,6 +13,9 @@ $main-color01-dark: #1A7279 !default;
 .main-color01-dark {
   color: $main-color01-dark!important;
 }
+.bg-main-color01-light {
+  background-color: #E8F6F3!important;
+}
 
 $custom-theme: (
   "color01": $main-color01,

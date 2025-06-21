@@ -26,6 +26,22 @@
         padding: .35rem .75rem;
     }
 }
+.btn-color01-dark-outline {
+    background-color: white;
+    padding: .35rem 1.25rem;
+    color: $main-color01-dark;
+    border-radius: 8px;
+    border: 1px solid $main-color01-dark;
+    &:hover, &:active {
+        transition: .3s;
+        background-color: lightne($main-color01-light, 5%);
+        color: $main-color01-dark!important;
+        border: 1px solid $main-color01-dark;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: .35rem .75rem;
+    }
+}
 .btn-gray {
     background-color: $gray-600;
     padding: .35rem 1.25rem;

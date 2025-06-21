@@ -59,7 +59,7 @@
 </nav> -->
       <!-- CONTENT -->
       <div class="content container-fluid">
-        <div class="work-title">
+        <div class="page">
           <div class="page-title">
             <div><i class="bi bi-receipt-cutoff me-2"></i>新增工單<span class="warning">30 天內有相同客戶工單</span></div>
             <div>
@@ -67,7 +67,7 @@
               <button class="btn py-0 btn-next">下一筆<i class="bi bi-arrow-right-circle-fill ms-1"></i></button>
             </div>
           </div>
-          <div class="form-area">
+          <div class="form-area mb-3">
             <div class="form-section border-bottom">
               <div class="row">
                 <div class="col-md-4 mb-3">
@@ -105,7 +105,7 @@
               <div class="row py-3 ps-3 ms-0">
                 <div class="col-md-4 mb-3">
                   <label for="" class="form-label mb-1 required">客戶名稱</label>
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select" aria-label="">
                     <option selected>請選擇</option>
                     <option value="1">One</option>
                   </select>
@@ -122,13 +122,13 @@
                   <label for="" class="form-label mb-1">裝機地址</label>
                   <div class="row g-1">
                     <div class="col-md-3">
-                      <select class="form-select" aria-label="Default select example">
+                      <select class="form-select" aria-label="">
                         <option selected>請選擇</option>
                         <option value="1">One</option>
                       </select>
                     </div>
                     <div class="col-md-3">
-                      <select class="form-select" aria-label="Default select example">
+                      <select class="form-select" aria-label="">
                         <option selected>請選擇</option>
                         <option value="1">One</option>
                       </select>
@@ -146,13 +146,13 @@
                   <label for="" class="form-label mb-1">寄件地址</label>
                   <div class="row g-1">
                     <div class="col-md-3">
-                      <select class="form-select" aria-label="Default select example">
+                      <select class="form-select" aria-label="">
                         <option selected>請選擇</option>
                         <option value="1">One</option>
                       </select>
                     </div>
                     <div class="col-md-3">
-                      <select class="form-select" aria-label="Default select example">
+                      <select class="form-select" aria-label="">
                         <option selected>請選擇</option>
                         <option value="1">One</option>
                       </select>
@@ -212,7 +212,7 @@
               <div class="row py-3 ps-3 ms-0">
                 <div class="col-md mb-3">
                   <label for="" class="form-label mb-1 required">名稱</label>
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select" aria-label="">
                     <option selected>請選擇</option>
                     <option value="1">One</option>
                   </select>
@@ -233,29 +233,333 @@
             </div>
             <div class="form-section border-bottom">
               <div class="form-section-title"><i class="bi bi-ui-checks-grid me-2"></i>設備資訊</div>
-              <div class="row py-3 ps-3 ms-0">
-                <div class="col-md mb-3">
-                  <label for="" class="form-label mb-1 required">名稱</label>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>請選擇</option>
-                    <option value="1">One</option>
-                  </select>
+              <div class="p-3 ms-4 bg-main-color01-light rounded my-2">
+                <div class="row mb-2">
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>編號</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>名稱</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>類型</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>前處理</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>儲桶批號</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>儲桶</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="col-md mb-3">
-                  <label for="" class="form-label mb-1">電話</label>
-                  <input type="text" class="form-control" id="" placeholder="電話">
+                <div class="mb-3">
+                  <div class="fw-bold">品項清單</div>
+                  <div class="row g-1 align-items-center mb-1">
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">名稱</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">開始日期</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">結束日期</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">庫存量</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">更換數量</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">是否寄倉</div>
+                    </div>
+                    <div class="col-1">
+                      <button class="btn btn-color01-dark px-3 py-1">新增</button>
+                    </div>
+                  </div>
+                  <div class="row g-1 align-items-center mb-1">
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="date" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="date" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">是</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">否</label>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <button class="btn btn-gray px-3 py-1"><i class="bi bi-trash"></i></button>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md mb-3">
-                  <label for="" class="form-label mb-1">電子信箱</label>
-                  <input type="text" class="form-control" id="" placeholder="電子信箱">
+                <div class="mb-3">
+                  <div class="fw-bold">功能檢測清單</div>
+                  <div class="row g-1 align-items-center mb-1">
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">內容</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">正常操作範圍</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">實際測值</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">備註</div>
+                    </div>
+                    <div class="col-1">
+                      <button class="btn btn-color01-dark px-3 py-1">新增</button>
+                    </div>
+                  </div>
+                  <div class="row g-1 align-items-center mb-1">
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col-1">
+                      <button class="btn btn-gray px-3 py-1"><i class="bi bi-trash"></i></button>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-1 mb-3">
-                  <label for="" class="form-label mb-1">顏色</label>
-                  <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+              </div>
+              <div class="p-3 ms-4 bg-main-color01-light rounded my-2">
+                <div class="row mb-2">
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>編號</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>名稱</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>類型</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>前處理</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>儲桶批號</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <select class="form-select" aria-label="">
+                      <option selected>儲桶</option>
+                      <option value="1">One</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="fw-bold">品項清單</div>
+                  <div class="row g-1 align-items-center mb-1">
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">名稱</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">開始日期</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">結束日期</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">庫存量</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">更換數量</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">是否寄倉</div>
+                    </div>
+                    <div class="col-1">
+                      <button class="btn btn-color01-dark px-3 py-1">新增</button>
+                    </div>
+                  </div>
+                  <div class="row g-1 align-items-center mb-1">
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="date" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="date" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">是</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">否</label>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <button class="btn btn-gray px-3 py-1"><i class="bi bi-trash"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="fw-bold">功能檢測清單</div>
+                  <div class="row g-1 align-items-center mb-1">
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">內容</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">正常操作範圍</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">實際測值</div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-secondary text-white px-2 py-1 rounded">備註</div>
+                    </div>
+                    <div class="col-1">
+                      <button class="btn btn-color01-dark px-3 py-1">新增</button>
+                    </div>
+                  </div>
+                  <div class="row g-1 align-items-center mb-1">
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" id="" placeholder="請輸入">
+                    </div>
+                    <div class="col-1">
+                      <button class="btn btn-gray px-3 py-1"><i class="bi bi-trash"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-color01-dark ms-4 mb-3"><i class="bi bi-plus-lg me-2"></i>新增</button>
+            </div>
+            <div class="form-section border-bottom">
+              <div class="form-section-title"><i class="bi bi-sticky me-2"></i>其他資料</div>
+              <div class="ms-4 ps-1 py-3">
+                <div class="mb-3">
+                  <label for="" class="form-label mb-1">注意事項</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-2">
+                  <label for="formFileMultiple" class="form-label mb-1">檔案上傳</label>
+                  <div class="d-flex flex-wrap">
+                    <div class="border rounded me-3 mb-3 upload-img">
+                      <button class="btn btn-trash"><i class="bi bi-trash "></i></button>
+                      <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="border rounded me-3 mb-3 upload-img">
+                      <button class="btn btn-trash"><i class="bi bi-trash "></i></button>
+                      <img src="images/aa.png" alt="">
+                    </div>
+                    <div class="border rounded me-3 mb-3 upload-img">
+                      <button class="btn btn-trash"><i class="bi bi-trash "></i></button>
+                      <img src="images/aa.png" alt="">
+                    </div>
+                    <div class="border rounded me-3 mb-3 upload-img">
+                      <button class="btn btn-trash"><i class="bi bi-trash "></i></button>
+                      <img src="images/aa.png" alt="">
+                    </div>
+                  </div>
+                  <div><button class="btn btn-color01-dark">選擇檔案</button></div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="form-area mb-3">
+            <div class="form-section">
+              <div class="row">
+                <div class="col-md-8 mb-3">
+                  <div class="form-section-title"><i class="bi bi-pen me-2"></i>電子簽章</div>
+                  <div class="sign-area mt-2 border rounded">
+                    <button class="btn btn-sign">請簽名</button>
+                    <!-- <button class="btn btn-trash">清除重填</button> -->
+                    <!-- <img src="images/aa.png" class="sign-img" alt=""> -->
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="form-section-title"><i class="bi bi-calendar-event me-2"></i>實際工作日</div>
+                  <div class="mt-2">
+                    <input type="date" class="form-control mb-2" id="" placeholder="請輸入">
+                    <input type="time" class="form-control" id="" placeholder="請輸入">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fixed-bottom bg-white d-flex align-items-center justify-content-center py-2">
+          <button type=" button" class="btn btn-secondary me-2"><i class="bi bi-x me-2"></i>取消</button>
+          <button type=" button" class="btn btn-color01 me-2"><i class="bi bi-ticket-perforated me-2"></i>拆單</button>
+          <button type=" button" class="btn btn-color01-dark-outline me-2"><i class="bi bi-envelope me-2"></i>寄送 E-mail</button>
+          <button type=" button" class="btn btn-color01-dark"><i class="bi bi-save me-2"></i>儲存</button>
         </div>
       </div>
     </main>
