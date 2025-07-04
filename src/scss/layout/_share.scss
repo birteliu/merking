@@ -63,6 +63,16 @@ body {
         margin-left: .25rem;
       }
     }
+    input.form-control {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    input.form-control[disabled]:hover {
+      overflow: visible; 
+      white-space: normal; 
+      text-overflow: clip; 
+  }
     .form-table {
       --bs-table-bg: transparent;
       tr {
@@ -70,13 +80,18 @@ body {
         th, td {
           padding: 0 .25rem .25rem 0;
           border: 0;
-          min-width: 170px;
+          @include media-breakpoint-down(sm) {
+            min-width: 170px;
+          }
           &.trash {
             min-width: calc(2rem + 2px);
           }
           &.w425rem {
             min-width: 4.25rem;
             white-space: nowrap;
+          }
+          &.w30 {
+            width: 30%;
           }
         }
       }

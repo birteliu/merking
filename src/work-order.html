@@ -14,7 +14,7 @@ breadcrumb : null
 {% include "macros/nav.html" %}
 
 <!-- CONTENT -->
-<div class="content container-fluid">
+<div class="content container-xxl">
     <div class="page">
         <div class="page-title">
             <div><i class="bi bi-receipt-cutoff me-2"></i>新增工單<span class="warning">30天內有同客戶工單</span></div>
@@ -126,7 +126,7 @@ breadcrumb : null
                             <table class="table form-table mb-0">
                                 <tbody>
                                     <tr>
-                                        <td class="w4rem">
+                                        <td class="w425rem">
                                             <div class="bg-secondary text-white px-2 py-2 rounded">主管</div>
                                         </td>
                                         <td>
@@ -138,7 +138,7 @@ breadcrumb : null
                                         <td>
                                             <input type="text" class="form-control" id="" placeholder="手機">
                                         </td>
-                                        <td>
+                                        <td class="w30">
                                             <input type="text" class="form-control" id="" placeholder="E-mail">
                                         </td>
                                         <td class="trash">
@@ -184,11 +184,11 @@ breadcrumb : null
                     </div>
                     <div class="col-md mb-3">
                         <label for="" class="form-label mb-1">電話</label>
-                        <input type="text" class="form-control" id="" placeholder="電話">
+                        <input type="text" class="form-control" id="" value="0911123123" disabled>
                     </div>
                     <div class="col-md mb-3">
                         <label for="" class="form-label mb-1">電子信箱</label>
-                        <input type="text" class="form-control" id="" placeholder="電子信箱">
+                        <input type="text" class="form-control" id="" value="abcde@gmail.com" disabled>
                     </div>
                     <div class="col-md-1 mb-3">
                         <label for="" class="form-label mb-1">顏色</label>
@@ -198,43 +198,34 @@ breadcrumb : null
             </div>
             <div class="form-section border-bottom">
                 <div class="form-section-title"><i class="bi bi-ui-checks-grid me-2"></i>設備資訊</div>
-                <div class="p-3 ms-sm-4 bg-main-color01-light rounded my-2">
-                    <div class="row mb-2 g-2">
-                        <div class="col-md-4 col-6">
+                <div class="p-3 ms-sm-4 bg-light border rounded my-2">
+                    <div class="row mb-3 g-2">
+                        <div class="col-md-2 col-6">
+                            <label for="" class="form-label mb-1">編號</label>
                             <select class="form-select" aria-label="">
                                 <option selected>編號</option>
                                 <option value="1">One</option>
                             </select>
                         </div>
-                        <div class="col-md-4 col-6">
-                            <select class="form-select" aria-label="">
-                                <option selected>名稱</option>
-                                <option value="1">One</option>
-                            </select>
+                        <div class="col-md-5 col-6">
+                            <label for="" class="form-label mb-1">名稱</label>
+                            <input type="text" class="form-control" id="" value="名稱" disabled>
                         </div>
-                        <div class="col-md-4 col-6">
-                            <select class="form-select" aria-label="">
-                                <option selected>類型</option>
-                                <option value="1">One</option>
-                            </select>
+                        <div class="col-md-5 col-6">
+                            <label for="" class="form-label mb-1">類型</label>
+                            <input type="text" class="form-control" id="" value="類型" disabled>
                         </div>
-                        <div class="col-md-4 col-6">
-                            <select class="form-select" aria-label="">
-                                <option selected>前處理</option>
-                                <option value="1">One</option>
-                            </select>
+                        <div class="col-md-8">
+                            <label for="" class="form-label mb-1">前處理</label>
+                            <input type="text" class="form-control" id="" value="前處理" disabled>
                         </div>
-                        <div class="col-md-4 col-6">
-                            <select class="form-select" aria-label="">
-                                <option selected>儲桶批號</option>
-                                <option value="1">One</option>
-                            </select>
+                        <div class="col-md-2 col-6">
+                            <label for="" class="form-label mb-1">儲桶批號</label>
+                            <input type="text" class="form-control" id="" value="儲桶批號" disabled>
                         </div>
-                        <div class="col-md-4 col-6">
-                            <select class="form-select" aria-label="">
-                                <option selected>儲桶</option>
-                                <option value="1">One</option>
-                            </select>
+                        <div class="col-md-2 col-6">
+                            <label for="" class="form-label mb-1">儲桶</label>
+                            <input type="text" class="form-control" id="" value="儲桶" disabled>
                         </div>
                     </div>
                     <div class="mb-3">
@@ -270,10 +261,10 @@ breadcrumb : null
                                         <input type="text" class="form-control" id="" placeholder="請輸入">
                                     </td>
                                     <td>
-                                        <input type="date" class="form-control" id="" placeholder="請輸入">
+                                        <input type="text" class="form-control" id="" placeholder="請輸入">
                                     </td>
                                     <td>
-                                        <input type="date" class="form-control" id="" placeholder="請輸入">
+                                        <input type="text" class="form-control" id="" placeholder="請輸入">
                                     </td>
                                     <td>
                                         <input type="text" class="form-control" id="" placeholder="請輸入">
@@ -282,12 +273,12 @@ breadcrumb : null
                                         <input type="text" class="form-control" id="" placeholder="請輸入">
                                     </td>
                                     <td>
-                                        <div class="p-2">
-                                            <div class="form-check form-check-inline">
+                                        <div class="p-2 d-flex">
+                                            <div class="form-check form-check-inline me-2">
                                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                                 <label class="form-check-label" for="inlineRadio1">是</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
+                                            <div class="form-check form-check-inline me-1">
                                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                                                 <label class="form-check-label" for="inlineRadio2">否</label>
                                             </div>
